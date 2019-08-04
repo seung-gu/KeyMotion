@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/ProjectKeyMotion/KeyMotion/source
+CMAKE_SOURCE_DIR = /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/ProjectKeyMotion/KeyMotion/source
+CMAKE_BINARY_DIR = /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source
 
 # Include any dependencies generated for this target.
 include cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/KeyMotion_v1c.dir/depend.make
@@ -59,16 +59,16 @@ include cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/KeyMotion_v1c.dir/flags.make
 
 cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/KeyMotion_v1c.dir/main.cpp.o: cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/KeyMotion_v1c.dir/flags.make
 cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/KeyMotion_v1c.dir/main.cpp.o: cpp/KeyMotion/KeyMotion_v1c/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/ProjectKeyMotion/KeyMotion/source/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/KeyMotion_v1c.dir/main.cpp.o"
-	cd /home/pi/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/KeyMotion_v1c.dir/main.cpp.o -c /home/pi/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/KeyMotion_v1c.dir/main.cpp.o"
+	cd /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/KeyMotion_v1c.dir/main.cpp.o -c /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c/main.cpp
 
 cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/KeyMotion_v1c.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/KeyMotion_v1c.dir/main.cpp.i"
-	cd /home/pi/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c/main.cpp > CMakeFiles/KeyMotion_v1c.dir/main.cpp.i
+	cd /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c/main.cpp > CMakeFiles/KeyMotion_v1c.dir/main.cpp.i
 
 cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/KeyMotion_v1c.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/KeyMotion_v1c.dir/main.cpp.s"
-	cd /home/pi/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c/main.cpp -o CMakeFiles/KeyMotion_v1c.dir/main.cpp.s
+	cd /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c/main.cpp -o CMakeFiles/KeyMotion_v1c.dir/main.cpp.s
 
 cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/KeyMotion_v1c.dir/main.cpp.o.requires:
 
@@ -83,16 +83,16 @@ cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/KeyMotion_v1c.dir/main.cpp.o.provides.bui
 
 cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/KeyMotion_v1c.dir/MyListener.cpp.o: cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/KeyMotion_v1c.dir/flags.make
 cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/KeyMotion_v1c.dir/MyListener.cpp.o: cpp/KeyMotion/KeyMotion_v1c/MyListener.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/ProjectKeyMotion/KeyMotion/source/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/KeyMotion_v1c.dir/MyListener.cpp.o"
-	cd /home/pi/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/KeyMotion_v1c.dir/MyListener.cpp.o -c /home/pi/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c/MyListener.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/KeyMotion_v1c.dir/MyListener.cpp.o"
+	cd /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/KeyMotion_v1c.dir/MyListener.cpp.o -c /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c/MyListener.cpp
 
 cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/KeyMotion_v1c.dir/MyListener.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/KeyMotion_v1c.dir/MyListener.cpp.i"
-	cd /home/pi/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c/MyListener.cpp > CMakeFiles/KeyMotion_v1c.dir/MyListener.cpp.i
+	cd /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c/MyListener.cpp > CMakeFiles/KeyMotion_v1c.dir/MyListener.cpp.i
 
 cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/KeyMotion_v1c.dir/MyListener.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/KeyMotion_v1c.dir/MyListener.cpp.s"
-	cd /home/pi/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c/MyListener.cpp -o CMakeFiles/KeyMotion_v1c.dir/MyListener.cpp.s
+	cd /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c/MyListener.cpp -o CMakeFiles/KeyMotion_v1c.dir/MyListener.cpp.s
 
 cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/KeyMotion_v1c.dir/MyListener.cpp.o.requires:
 
@@ -107,16 +107,16 @@ cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/KeyMotion_v1c.dir/MyListener.cpp.o.provid
 
 cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/KeyMotion_v1c.dir/display/sh1106/ArduiPi_OLED.cpp.o: cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/KeyMotion_v1c.dir/flags.make
 cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/KeyMotion_v1c.dir/display/sh1106/ArduiPi_OLED.cpp.o: cpp/KeyMotion/KeyMotion_v1c/display/sh1106/ArduiPi_OLED.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/ProjectKeyMotion/KeyMotion/source/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/KeyMotion_v1c.dir/display/sh1106/ArduiPi_OLED.cpp.o"
-	cd /home/pi/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/KeyMotion_v1c.dir/display/sh1106/ArduiPi_OLED.cpp.o -c /home/pi/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c/display/sh1106/ArduiPi_OLED.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/KeyMotion_v1c.dir/display/sh1106/ArduiPi_OLED.cpp.o"
+	cd /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/KeyMotion_v1c.dir/display/sh1106/ArduiPi_OLED.cpp.o -c /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c/display/sh1106/ArduiPi_OLED.cpp
 
 cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/KeyMotion_v1c.dir/display/sh1106/ArduiPi_OLED.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/KeyMotion_v1c.dir/display/sh1106/ArduiPi_OLED.cpp.i"
-	cd /home/pi/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c/display/sh1106/ArduiPi_OLED.cpp > CMakeFiles/KeyMotion_v1c.dir/display/sh1106/ArduiPi_OLED.cpp.i
+	cd /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c/display/sh1106/ArduiPi_OLED.cpp > CMakeFiles/KeyMotion_v1c.dir/display/sh1106/ArduiPi_OLED.cpp.i
 
 cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/KeyMotion_v1c.dir/display/sh1106/ArduiPi_OLED.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/KeyMotion_v1c.dir/display/sh1106/ArduiPi_OLED.cpp.s"
-	cd /home/pi/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c/display/sh1106/ArduiPi_OLED.cpp -o CMakeFiles/KeyMotion_v1c.dir/display/sh1106/ArduiPi_OLED.cpp.s
+	cd /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c/display/sh1106/ArduiPi_OLED.cpp -o CMakeFiles/KeyMotion_v1c.dir/display/sh1106/ArduiPi_OLED.cpp.s
 
 cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/KeyMotion_v1c.dir/display/sh1106/ArduiPi_OLED.cpp.o.requires:
 
@@ -131,16 +131,16 @@ cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/KeyMotion_v1c.dir/display/sh1106/ArduiPi_
 
 cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/KeyMotion_v1c.dir/display/sh1106/Adafruit_GFX.cpp.o: cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/KeyMotion_v1c.dir/flags.make
 cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/KeyMotion_v1c.dir/display/sh1106/Adafruit_GFX.cpp.o: cpp/KeyMotion/KeyMotion_v1c/display/sh1106/Adafruit_GFX.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/ProjectKeyMotion/KeyMotion/source/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/KeyMotion_v1c.dir/display/sh1106/Adafruit_GFX.cpp.o"
-	cd /home/pi/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/KeyMotion_v1c.dir/display/sh1106/Adafruit_GFX.cpp.o -c /home/pi/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c/display/sh1106/Adafruit_GFX.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/KeyMotion_v1c.dir/display/sh1106/Adafruit_GFX.cpp.o"
+	cd /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/KeyMotion_v1c.dir/display/sh1106/Adafruit_GFX.cpp.o -c /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c/display/sh1106/Adafruit_GFX.cpp
 
 cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/KeyMotion_v1c.dir/display/sh1106/Adafruit_GFX.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/KeyMotion_v1c.dir/display/sh1106/Adafruit_GFX.cpp.i"
-	cd /home/pi/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c/display/sh1106/Adafruit_GFX.cpp > CMakeFiles/KeyMotion_v1c.dir/display/sh1106/Adafruit_GFX.cpp.i
+	cd /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c/display/sh1106/Adafruit_GFX.cpp > CMakeFiles/KeyMotion_v1c.dir/display/sh1106/Adafruit_GFX.cpp.i
 
 cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/KeyMotion_v1c.dir/display/sh1106/Adafruit_GFX.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/KeyMotion_v1c.dir/display/sh1106/Adafruit_GFX.cpp.s"
-	cd /home/pi/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c/display/sh1106/Adafruit_GFX.cpp -o CMakeFiles/KeyMotion_v1c.dir/display/sh1106/Adafruit_GFX.cpp.s
+	cd /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c/display/sh1106/Adafruit_GFX.cpp -o CMakeFiles/KeyMotion_v1c.dir/display/sh1106/Adafruit_GFX.cpp.s
 
 cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/KeyMotion_v1c.dir/display/sh1106/Adafruit_GFX.cpp.o.requires:
 
@@ -155,16 +155,16 @@ cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/KeyMotion_v1c.dir/display/sh1106/Adafruit
 
 cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/KeyMotion_v1c.dir/bluetooth/Bluetooth.cpp.o: cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/KeyMotion_v1c.dir/flags.make
 cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/KeyMotion_v1c.dir/bluetooth/Bluetooth.cpp.o: cpp/KeyMotion/KeyMotion_v1c/bluetooth/Bluetooth.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/ProjectKeyMotion/KeyMotion/source/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/KeyMotion_v1c.dir/bluetooth/Bluetooth.cpp.o"
-	cd /home/pi/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/KeyMotion_v1c.dir/bluetooth/Bluetooth.cpp.o -c /home/pi/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c/bluetooth/Bluetooth.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/KeyMotion_v1c.dir/bluetooth/Bluetooth.cpp.o"
+	cd /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/KeyMotion_v1c.dir/bluetooth/Bluetooth.cpp.o -c /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c/bluetooth/Bluetooth.cpp
 
 cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/KeyMotion_v1c.dir/bluetooth/Bluetooth.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/KeyMotion_v1c.dir/bluetooth/Bluetooth.cpp.i"
-	cd /home/pi/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c/bluetooth/Bluetooth.cpp > CMakeFiles/KeyMotion_v1c.dir/bluetooth/Bluetooth.cpp.i
+	cd /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c/bluetooth/Bluetooth.cpp > CMakeFiles/KeyMotion_v1c.dir/bluetooth/Bluetooth.cpp.i
 
 cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/KeyMotion_v1c.dir/bluetooth/Bluetooth.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/KeyMotion_v1c.dir/bluetooth/Bluetooth.cpp.s"
-	cd /home/pi/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c/bluetooth/Bluetooth.cpp -o CMakeFiles/KeyMotion_v1c.dir/bluetooth/Bluetooth.cpp.s
+	cd /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c/bluetooth/Bluetooth.cpp -o CMakeFiles/KeyMotion_v1c.dir/bluetooth/Bluetooth.cpp.s
 
 cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/KeyMotion_v1c.dir/bluetooth/Bluetooth.cpp.o.requires:
 
@@ -239,8 +239,8 @@ cpp/KeyMotion/KeyMotion_v1c/KeyMotion_v1c: /usr/local/lib/libopencv_objdetect.so
 cpp/KeyMotion/KeyMotion_v1c/KeyMotion_v1c: /usr/local/lib/libopencv_imgproc.so.3.4.0
 cpp/KeyMotion/KeyMotion_v1c/KeyMotion_v1c: /usr/local/lib/libopencv_core.so.3.4.0
 cpp/KeyMotion/KeyMotion_v1c/KeyMotion_v1c: cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/KeyMotion_v1c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pi/ProjectKeyMotion/KeyMotion/source/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable KeyMotion_v1c"
-	cd /home/pi/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/KeyMotion_v1c.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable KeyMotion_v1c"
+	cd /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/KeyMotion_v1c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/KeyMotion_v1c.dir/build: cpp/KeyMotion/KeyMotion_v1c/KeyMotion_v1c
@@ -256,10 +256,10 @@ cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/KeyMotion_v1c.dir/requires: cpp/KeyMotion
 .PHONY : cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/KeyMotion_v1c.dir/requires
 
 cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/KeyMotion_v1c.dir/clean:
-	cd /home/pi/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c && $(CMAKE_COMMAND) -P CMakeFiles/KeyMotion_v1c.dir/cmake_clean.cmake
+	cd /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c && $(CMAKE_COMMAND) -P CMakeFiles/KeyMotion_v1c.dir/cmake_clean.cmake
 .PHONY : cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/KeyMotion_v1c.dir/clean
 
 cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/KeyMotion_v1c.dir/depend:
-	cd /home/pi/ProjectKeyMotion/KeyMotion/source && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/ProjectKeyMotion/KeyMotion/source /home/pi/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c /home/pi/ProjectKeyMotion/KeyMotion/source /home/pi/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c /home/pi/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/KeyMotion_v1c.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/KeyMotion_v1c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/KeyMotion_v1c.dir/depend
 

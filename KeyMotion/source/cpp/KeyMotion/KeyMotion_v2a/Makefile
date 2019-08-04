@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/ProjectKeyMotion/KeyMotion/source
+CMAKE_SOURCE_DIR = /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/ProjectKeyMotion/KeyMotion/source
+CMAKE_BINARY_DIR = /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/pi/ProjectKeyMotion/KeyMotion/source && $(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ProjectKeyMotion/KeyMotion/source/CMakeFiles /home/pi/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/progress.marks
-	cd /home/pi/ProjectKeyMotion/KeyMotion/source && $(MAKE) -f CMakeFiles/Makefile2 cpp/KeyMotion/KeyMotion_v2a/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ProjectKeyMotion/KeyMotion/source/CMakeFiles 0
+	cd /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source && $(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/CMakeFiles /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/progress.marks
+	cd /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source && $(MAKE) -f CMakeFiles/Makefile2 cpp/KeyMotion/KeyMotion_v2a/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/pi/ProjectKeyMotion/KeyMotion/source && $(MAKE) -f CMakeFiles/Makefile2 cpp/KeyMotion/KeyMotion_v2a/clean
+	cd /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source && $(MAKE) -f CMakeFiles/Makefile2 cpp/KeyMotion/KeyMotion_v2a/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/pi/ProjectKeyMotion/KeyMotion/source && $(MAKE) -f CMakeFiles/Makefile2 cpp/KeyMotion/KeyMotion_v2a/preinstall
+	cd /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source && $(MAKE) -f CMakeFiles/Makefile2 cpp/KeyMotion/KeyMotion_v2a/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/pi/ProjectKeyMotion/KeyMotion/source && $(MAKE) -f CMakeFiles/Makefile2 cpp/KeyMotion/KeyMotion_v2a/preinstall
+	cd /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source && $(MAKE) -f CMakeFiles/Makefile2 cpp/KeyMotion/KeyMotion_v2a/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/pi/ProjectKeyMotion/KeyMotion/source && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/LibsKeyMotion_v2a.dir/rule:
-	cd /home/pi/ProjectKeyMotion/KeyMotion/source && $(MAKE) -f CMakeFiles/Makefile2 cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/LibsKeyMotion_v2a.dir/rule
+	cd /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source && $(MAKE) -f CMakeFiles/Makefile2 cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/LibsKeyMotion_v2a.dir/rule
 .PHONY : cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/LibsKeyMotion_v2a.dir/rule
 
 # Convenience name for target.
@@ -122,12 +122,12 @@ LibsKeyMotion_v2a: cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/LibsKeyMotion_v2a.dir/
 
 # fast build rule for target.
 LibsKeyMotion_v2a/fast:
-	cd /home/pi/ProjectKeyMotion/KeyMotion/source && $(MAKE) -f cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/LibsKeyMotion_v2a.dir/build.make cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/LibsKeyMotion_v2a.dir/build
+	cd /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source && $(MAKE) -f cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/LibsKeyMotion_v2a.dir/build.make cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/LibsKeyMotion_v2a.dir/build
 .PHONY : LibsKeyMotion_v2a/fast
 
 # Convenience name for target.
 cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/KeyMotion_v2a.dir/rule:
-	cd /home/pi/ProjectKeyMotion/KeyMotion/source && $(MAKE) -f CMakeFiles/Makefile2 cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/KeyMotion_v2a.dir/rule
+	cd /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source && $(MAKE) -f CMakeFiles/Makefile2 cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/KeyMotion_v2a.dir/rule
 .PHONY : cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/KeyMotion_v2a.dir/rule
 
 # Convenience name for target.
@@ -137,7 +137,7 @@ KeyMotion_v2a: cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/KeyMotion_v2a.dir/rule
 
 # fast build rule for target.
 KeyMotion_v2a/fast:
-	cd /home/pi/ProjectKeyMotion/KeyMotion/source && $(MAKE) -f cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/KeyMotion_v2a.dir/build.make cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/KeyMotion_v2a.dir/build
+	cd /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source && $(MAKE) -f cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/KeyMotion_v2a.dir/build.make cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/KeyMotion_v2a.dir/build
 .PHONY : KeyMotion_v2a/fast
 
 MyListener.o: MyListener.cpp.o
@@ -146,7 +146,7 @@ MyListener.o: MyListener.cpp.o
 
 # target to build an object file
 MyListener.cpp.o:
-	cd /home/pi/ProjectKeyMotion/KeyMotion/source && $(MAKE) -f cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/KeyMotion_v2a.dir/build.make cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/KeyMotion_v2a.dir/MyListener.cpp.o
+	cd /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source && $(MAKE) -f cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/KeyMotion_v2a.dir/build.make cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/KeyMotion_v2a.dir/MyListener.cpp.o
 .PHONY : MyListener.cpp.o
 
 MyListener.i: MyListener.cpp.i
@@ -155,7 +155,7 @@ MyListener.i: MyListener.cpp.i
 
 # target to preprocess a source file
 MyListener.cpp.i:
-	cd /home/pi/ProjectKeyMotion/KeyMotion/source && $(MAKE) -f cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/KeyMotion_v2a.dir/build.make cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/KeyMotion_v2a.dir/MyListener.cpp.i
+	cd /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source && $(MAKE) -f cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/KeyMotion_v2a.dir/build.make cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/KeyMotion_v2a.dir/MyListener.cpp.i
 .PHONY : MyListener.cpp.i
 
 MyListener.s: MyListener.cpp.s
@@ -164,7 +164,7 @@ MyListener.s: MyListener.cpp.s
 
 # target to generate assembly for a file
 MyListener.cpp.s:
-	cd /home/pi/ProjectKeyMotion/KeyMotion/source && $(MAKE) -f cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/KeyMotion_v2a.dir/build.make cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/KeyMotion_v2a.dir/MyListener.cpp.s
+	cd /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source && $(MAKE) -f cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/KeyMotion_v2a.dir/build.make cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/KeyMotion_v2a.dir/MyListener.cpp.s
 .PHONY : MyListener.cpp.s
 
 display/sh1106/Adafruit_GFX.o: display/sh1106/Adafruit_GFX.cpp.o
@@ -173,7 +173,7 @@ display/sh1106/Adafruit_GFX.o: display/sh1106/Adafruit_GFX.cpp.o
 
 # target to build an object file
 display/sh1106/Adafruit_GFX.cpp.o:
-	cd /home/pi/ProjectKeyMotion/KeyMotion/source && $(MAKE) -f cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/KeyMotion_v2a.dir/build.make cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/KeyMotion_v2a.dir/display/sh1106/Adafruit_GFX.cpp.o
+	cd /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source && $(MAKE) -f cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/KeyMotion_v2a.dir/build.make cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/KeyMotion_v2a.dir/display/sh1106/Adafruit_GFX.cpp.o
 .PHONY : display/sh1106/Adafruit_GFX.cpp.o
 
 display/sh1106/Adafruit_GFX.i: display/sh1106/Adafruit_GFX.cpp.i
@@ -182,7 +182,7 @@ display/sh1106/Adafruit_GFX.i: display/sh1106/Adafruit_GFX.cpp.i
 
 # target to preprocess a source file
 display/sh1106/Adafruit_GFX.cpp.i:
-	cd /home/pi/ProjectKeyMotion/KeyMotion/source && $(MAKE) -f cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/KeyMotion_v2a.dir/build.make cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/KeyMotion_v2a.dir/display/sh1106/Adafruit_GFX.cpp.i
+	cd /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source && $(MAKE) -f cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/KeyMotion_v2a.dir/build.make cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/KeyMotion_v2a.dir/display/sh1106/Adafruit_GFX.cpp.i
 .PHONY : display/sh1106/Adafruit_GFX.cpp.i
 
 display/sh1106/Adafruit_GFX.s: display/sh1106/Adafruit_GFX.cpp.s
@@ -191,7 +191,7 @@ display/sh1106/Adafruit_GFX.s: display/sh1106/Adafruit_GFX.cpp.s
 
 # target to generate assembly for a file
 display/sh1106/Adafruit_GFX.cpp.s:
-	cd /home/pi/ProjectKeyMotion/KeyMotion/source && $(MAKE) -f cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/KeyMotion_v2a.dir/build.make cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/KeyMotion_v2a.dir/display/sh1106/Adafruit_GFX.cpp.s
+	cd /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source && $(MAKE) -f cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/KeyMotion_v2a.dir/build.make cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/KeyMotion_v2a.dir/display/sh1106/Adafruit_GFX.cpp.s
 .PHONY : display/sh1106/Adafruit_GFX.cpp.s
 
 display/sh1106/ArduiPi_OLED.o: display/sh1106/ArduiPi_OLED.cpp.o
@@ -200,7 +200,7 @@ display/sh1106/ArduiPi_OLED.o: display/sh1106/ArduiPi_OLED.cpp.o
 
 # target to build an object file
 display/sh1106/ArduiPi_OLED.cpp.o:
-	cd /home/pi/ProjectKeyMotion/KeyMotion/source && $(MAKE) -f cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/KeyMotion_v2a.dir/build.make cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/KeyMotion_v2a.dir/display/sh1106/ArduiPi_OLED.cpp.o
+	cd /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source && $(MAKE) -f cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/KeyMotion_v2a.dir/build.make cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/KeyMotion_v2a.dir/display/sh1106/ArduiPi_OLED.cpp.o
 .PHONY : display/sh1106/ArduiPi_OLED.cpp.o
 
 display/sh1106/ArduiPi_OLED.i: display/sh1106/ArduiPi_OLED.cpp.i
@@ -209,7 +209,7 @@ display/sh1106/ArduiPi_OLED.i: display/sh1106/ArduiPi_OLED.cpp.i
 
 # target to preprocess a source file
 display/sh1106/ArduiPi_OLED.cpp.i:
-	cd /home/pi/ProjectKeyMotion/KeyMotion/source && $(MAKE) -f cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/KeyMotion_v2a.dir/build.make cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/KeyMotion_v2a.dir/display/sh1106/ArduiPi_OLED.cpp.i
+	cd /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source && $(MAKE) -f cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/KeyMotion_v2a.dir/build.make cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/KeyMotion_v2a.dir/display/sh1106/ArduiPi_OLED.cpp.i
 .PHONY : display/sh1106/ArduiPi_OLED.cpp.i
 
 display/sh1106/ArduiPi_OLED.s: display/sh1106/ArduiPi_OLED.cpp.s
@@ -218,7 +218,7 @@ display/sh1106/ArduiPi_OLED.s: display/sh1106/ArduiPi_OLED.cpp.s
 
 # target to generate assembly for a file
 display/sh1106/ArduiPi_OLED.cpp.s:
-	cd /home/pi/ProjectKeyMotion/KeyMotion/source && $(MAKE) -f cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/KeyMotion_v2a.dir/build.make cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/KeyMotion_v2a.dir/display/sh1106/ArduiPi_OLED.cpp.s
+	cd /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source && $(MAKE) -f cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/KeyMotion_v2a.dir/build.make cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/KeyMotion_v2a.dir/display/sh1106/ArduiPi_OLED.cpp.s
 .PHONY : display/sh1106/ArduiPi_OLED.cpp.s
 
 main.o: main.cpp.o
@@ -227,8 +227,8 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd /home/pi/ProjectKeyMotion/KeyMotion/source && $(MAKE) -f cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/LibsKeyMotion_v2a.dir/build.make cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/LibsKeyMotion_v2a.dir/main.cpp.o
-	cd /home/pi/ProjectKeyMotion/KeyMotion/source && $(MAKE) -f cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/KeyMotion_v2a.dir/build.make cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/KeyMotion_v2a.dir/main.cpp.o
+	cd /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source && $(MAKE) -f cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/LibsKeyMotion_v2a.dir/build.make cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/LibsKeyMotion_v2a.dir/main.cpp.o
+	cd /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source && $(MAKE) -f cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/KeyMotion_v2a.dir/build.make cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/KeyMotion_v2a.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -237,8 +237,8 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /home/pi/ProjectKeyMotion/KeyMotion/source && $(MAKE) -f cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/LibsKeyMotion_v2a.dir/build.make cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/LibsKeyMotion_v2a.dir/main.cpp.i
-	cd /home/pi/ProjectKeyMotion/KeyMotion/source && $(MAKE) -f cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/KeyMotion_v2a.dir/build.make cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/KeyMotion_v2a.dir/main.cpp.i
+	cd /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source && $(MAKE) -f cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/LibsKeyMotion_v2a.dir/build.make cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/LibsKeyMotion_v2a.dir/main.cpp.i
+	cd /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source && $(MAKE) -f cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/KeyMotion_v2a.dir/build.make cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/KeyMotion_v2a.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -247,8 +247,8 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /home/pi/ProjectKeyMotion/KeyMotion/source && $(MAKE) -f cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/LibsKeyMotion_v2a.dir/build.make cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/LibsKeyMotion_v2a.dir/main.cpp.s
-	cd /home/pi/ProjectKeyMotion/KeyMotion/source && $(MAKE) -f cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/KeyMotion_v2a.dir/build.make cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/KeyMotion_v2a.dir/main.cpp.s
+	cd /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source && $(MAKE) -f cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/LibsKeyMotion_v2a.dir/build.make cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/LibsKeyMotion_v2a.dir/main.cpp.s
+	cd /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source && $(MAKE) -f cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/KeyMotion_v2a.dir/build.make cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/KeyMotion_v2a.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -284,6 +284,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/pi/ProjectKeyMotion/KeyMotion/source && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

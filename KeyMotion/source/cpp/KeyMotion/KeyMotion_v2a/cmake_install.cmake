@@ -1,4 +1,4 @@
-# Install script for directory: /home/pi/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v2a
+# Install script for directory: /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v2a
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -1,0 +1,14 @@
+2019/08/02
+
+KeyMotion_v2a 
+
+-> modifying histogram function,
+   preprocessing (no linear approximation any more), 
+   but formular : depth*depth*gray
+   
+2019/08/04
+
+KeyMotion_v2b 
+
+-> no pow() or fastPrecisePow() function any more.
+   ,but still pow() function used in histogram.
