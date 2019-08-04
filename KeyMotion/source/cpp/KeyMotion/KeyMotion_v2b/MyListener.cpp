@@ -23,7 +23,7 @@ bool displayOn = false;		//extern -> main.cpp
 
 void MyListener::onNewData (const DepthData *data)
 {
-	
+//clock_t startTime = clock(); 	
 	// this callback function will be called for every new
 	// depth frame
 	
@@ -60,13 +60,8 @@ void MyListener::onNewData (const DepthData *data)
 	
 	preProcessing();
 
-// pow function in preprocessing
-clock_t startTime = clock(); 
 	//trim only hand ROI by depth value
 	myGetHandROI(maskDepthGray, handROI);
-clock_t endTime = clock();
-double codeExcuteTime = ((double)(endTime-startTime))/CLOCKS_PER_SEC;	
-//cout<<codeExcuteTime*1000.0<<endl;
 	
 	//get only contour to get rid of noise inside of the hand
 	Mat contour;
@@ -87,7 +82,10 @@ double codeExcuteTime = ((double)(endTime-startTime))/CLOCKS_PER_SEC;
 	infoOnDisplay(fingers);
 	
 	cout<<1<<endl;	//success
-
+	
+	//clock_t endTime = clock();
+	//double codeExcuteTime = ((double)(endTime-startTime))/CLOCKS_PER_SEC;	
+	//cout<<codeExcuteTime*1000.0<<endl;
 }
 
 
