@@ -9,7 +9,7 @@
  * 
  * royale library version 3.17.0.56 for LINUX ARM
  * Overwritten by Seung-Gu Kang (onNewData class) 
- * 				in KeyMotion version 2a ( July, 2019 )
+ * 				in KeyMotion version 2b ( August, 2019 )
  \****************************************************************************/
 
 #include "MyListener.h"
