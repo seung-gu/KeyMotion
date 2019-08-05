@@ -531,7 +531,7 @@ void MyListener::handNonDetected()
 	{
 		if(readyGauge > 0)
 		{
-			if(readyGauge == READY && vHandPos.size() > test_size)
+			if(readyGauge == READY && vHandPos.size() > test_tp)
 				direction();
 		
 			readyGauge--;	
@@ -574,7 +574,7 @@ void MyListener::runMode()
 	
 	//vector push_back
 	if( !outOfRange() ){
-		if( vHandPos.size() < max_vHand_arr ){	// when HandPos vector has less than 10 arrays 
+		if( vHandPos.size() < max_tp ){	// when HandPos vector has less than 10 arrays 
 			vHandPos.push_back(vHand.at(0).pos);
 			vRadius.push_back(radius);
 			vHandPos_z.push_back(dist);
@@ -609,8 +609,8 @@ void MyListener::direction()
 	int xCt = 0, yCt = 0;
 	
 	// calculate how many pixels the position moved between start_pt and last_pt
-	Point difPos = vHandPos[vHandPos.size()-1] - vHandPos[vHandPos.size()-test_size-1];
-	for(int i=vHandPos.size()-1; i>vHandPos.size()-test_size-1; i--)
+	Point difPos = vHandPos[vHandPos.size()-1] - vHandPos[vHandPos.size()-test_tp-1];
+	for(int i=vHandPos.size()-1; i>vHandPos.size()-test_tp-1; i--)
 	{
 		if(vHandPos[i].x - vHandPos[i-1].x > 0) xCt++;	//moving leftward
 		else if(vHandPos[i].x - vHandPos[i-1].x < 0) xCt--;	  //rightward
@@ -633,8 +633,8 @@ void MyListener::direction()
 	
 	//accuracy rate
 	float accuracy = 0.6f; // 60% accuracy rate 		<--- could be customized
-	int success_point = cvRound((float)test_size * accuracy);
-	// e.g.) regarded as successful, if xCt or yCt is over than test_size*accuracy
+	int success_point = cvRound((float)test_tp * accuracy);
+	// e.g.) regarded as successful, if xCt or yCt is over than test_tp*accuracy
 	
 	//direction decision	<--- could be customized
 	bool x_movement_flag = false, y_movement_flag = false;

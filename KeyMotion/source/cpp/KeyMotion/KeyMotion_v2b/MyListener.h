@@ -109,9 +109,10 @@ private:
 private:
 	int directionMsg = 0;
 	
-	const int max_vHand_arr = 10;	// <------ could be customized
 	// compare start_pt of vHandPos array with last_pt of it 
-	const int test_size = 5;		// <------ could be customized
+	const int max_tp = 10;	//maximum tracking movement point <------ could be customized
+	const int test_tp = 5;	//testing tracking movement point <------ could be customized
+	
 	vector<Point> vHandPos;
 	vector<int> vHandPos_z;
 	vector<float> vRadius;
