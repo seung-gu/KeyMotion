@@ -531,7 +531,7 @@ void MyListener::handNonDetected()
 	{
 		if(readyGauge > 0)
 		{
-			if(readyGauge == READY && vHandPos.size() > 5)
+			if(readyGauge == READY && vHandPos.size() > test_size)
 				direction();
 		
 			readyGauge--;	
@@ -607,8 +607,7 @@ void MyListener::direction()
 {	
 	//movement direction
 	int xCt = 0, yCt = 0;
-	// compare start_pt of vHandPos array with last_pt of it 
-	int test_size = 5;	
+	
 	// calculate how many pixels the position moved between start_pt and last_pt
 	Point difPos = vHandPos[vHandPos.size()-1] - vHandPos[vHandPos.size()-test_size-1];
 	for(int i=vHandPos.size()-1; i>vHandPos.size()-test_size-1; i--)
@@ -620,22 +619,31 @@ void MyListener::direction()
 		else if(vHandPos[i].x - vHandPos[i-1].x < 0) yCt--;	  // downward
 	}
 	
-	//movement condition
+	//z-avarage value
 	int sum_dist = 0;
 	for(int i=0; i<vHandPos_z.size(); i++)
 		sum_dist += vHandPos_z[i];
 	int dist = sum_dist/vHandPos_z.size();
 	
+	//range threshold
 	int x_tol = (int)((float)zImagef.cols * (float)dist/255.0f );
 	int y_tol = (int)((float)zImagef.rows * (float)dist/255.0f / 2.0f);
-	
 	int x_dif_range = zImagef.cols/2 - x_tol;
 	int y_dif_range = zImagef.rows/2 - y_tol;
 	
-	float accuracy = 0.6f; // 60% accuracy rate 				<------ could be customized
+	//accuracy rate
+	float accuracy = 0.6f; // 60% accuracy rate 		<--- could be customized
 	int success_point = cvRound((float)test_size * accuracy);
 	// e.g.) regarded as successful, if xCt or yCt is over than test_size*accuracy
-	if(abs(difPos.x) > x_dif_range/2 && abs(difPos.y) < y_dif_range)
+	
+	//direction decision	<--- could be customized
+	bool x_movement_flag = false, y_movement_flag = false;
+	if(abs(difPos.x) > x_dif_range/2)	
+		x_movement_flag = true;
+	if(abs(difPos.y) > y_dif_range/2)
+		y_movement_flag = true;
+	
+	if(x_movement_flag && !y_movement_flag)
 	{
 		if(xCt >= success_point){
 			directionMsg = MSG_RIGHT;
@@ -646,7 +654,7 @@ void MyListener::direction()
 			//cout<<"Left"<<endl;
 		}
 	}
-	else if(abs(difPos.x) < x_dif_range/2 && abs(difPos.y) > y_dif_range/2)
+	else if(!x_movement_flag && y_movement_flag)
 	{
 		if(yCt >= success_point-1){
 			directionMsg = MSG_DOWN;

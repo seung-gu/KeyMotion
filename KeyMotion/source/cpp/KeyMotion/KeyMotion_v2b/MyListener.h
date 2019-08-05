@@ -110,6 +110,8 @@ private:
 	int directionMsg = 0;
 	
 	const int max_vHand_arr = 10;	// <------ could be customized
+	// compare start_pt of vHandPos array with last_pt of it 
+	const int test_size = 5;		// <------ could be customized
 	vector<Point> vHandPos;
 	vector<int> vHandPos_z;
 	vector<float> vRadius;

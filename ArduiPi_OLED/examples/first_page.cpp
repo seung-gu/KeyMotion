@@ -153,14 +153,10 @@ void startPageMode(void)
 	}
 		
 	printf("state : %d\n", mode_state);
-	
-	//batteryDisplay();
-	//chargingDisplay();
-	
+
 	display.display();
 	
 	updateScreen_flag = 0;
-	//start_page_flag = 0;
 }
 
 
