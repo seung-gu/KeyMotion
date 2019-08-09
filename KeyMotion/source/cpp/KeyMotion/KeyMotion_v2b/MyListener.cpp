@@ -142,10 +142,10 @@ void MyListener::myGetHandROI(InputArray _src, OutputArray _dst)
 	//set ROI gray Image from maskDepthGray  
 	Mat maskDepthGrayHist;
 	int zROI = myGetHistogram(src, maskDepthGrayHist);
-	int zROI_tol = 15;		//tolerance of z ROI
+	int zROI_tol = 30;		//tolerance of z ROI
 	
 	//sort only near hand position by depth data
-	myDepthROI(src, dst, zROI - zROI_tol*2, zROI + zROI_tol);	
+	myDepthROI(src, dst, zROI - zROI_tol, zROI + zROI_tol);	
 	
 	//to make binary
 	threshold(dst, dst, 254, 255, THRESH_BINARY_INV);
@@ -166,7 +166,7 @@ int MyListener::myGetHistogram(InputArray _src, OutputArray _hist)
 		
 	Mat hist;
 	int channels = 0;
-	int histSize = 64;
+	int histSize = 128;
 	float valueRange[] = {0.0,254.9};	//255 is background, so sorted out
 	const float* ranges[] = {valueRange};
 	calcHist(&src, 1, &channels, Mat(), hist, 1, &histSize, ranges);   
@@ -178,8 +178,10 @@ int MyListener::myGetHistogram(InputArray _src, OutputArray _hist)
 	// but these ranges could be modified depending on the size of hand 
 	int max_x = 255, max_y = -1;	
 	int num_sample = 5;
-	int hand_size_range[] = {160, 360};			// <------ could be customized
-	int std_dev_range[] = {15, 70};				// <------ could be customized
+	int hand_size_range[] = {80, 260};	//160~360 (num_sample : 5)  <------ could be customized
+	int std_dev_range[] = {3, 110};		//15~70 (num_sample : 5)	<------ could be customized
+
+	float avg_y_norm_=0.0f,std_dev_=0.0f;
 
 	// x = d(distance), y = hist.at<float>(x) = S(d)
 	// correlation between x and y => d^2 = k*S(d)
@@ -208,7 +210,7 @@ int MyListener::myGetHistogram(InputArray _src, OutputArray _hist)
 			}
 			float avg_y_norm = (float)hand_area/(float)num_sample;
 				
-			if( hand_area > hand_size_range[0] && hand_area < hand_size_range[1]){	// size range
+			if( cvRound(avg_y_norm) > hand_size_range[0] && cvRound(avg_y_norm) < hand_size_range[1]){	// size range
 				
 				// if hand area is within the cusomized range, standard dev is calculated
 				float sum_dev = 0.0f;
@@ -217,19 +219,15 @@ int MyListener::myGetHistogram(InputArray _src, OutputArray _hist)
 				float std_dev = pow(sum_dev/(float)num_sample, 0.5);	//standard deviation
 		
 				if( std_dev > std_dev_range[0] && std_dev < std_dev_range[1]){		// shape -> standard deviation
-					
 					max_x = x;
 					max_y = y_norm[num_sample/2];
-					
-				//	cout<<"hand area : "<<hand_area<<endl;
-				//	cout<<"std dev : "<<pow(sum_dev/(float)num_sample, 0.5)<<endl;
 				}
 			}
 		}
 	}
-//	rectangle(histImage, Point(max_x*binW, histImage.rows), 
-//		Point((max_x+1)*binW, histImage.rows - max_y), Scalar(0), -1);
-//	imshow("histImage", histImage);
+	//rectangle(histImage, Point(max_x*binW, histImage.rows), 
+	//	Point((max_x+1)*binW, histImage.rows - max_y), Scalar(0), -1);
+	//imshow("histImage", histImage);
 	
 	return (max_x*255)/histSize;
 }
@@ -287,7 +285,7 @@ void MyListener::getHandCenter(InputArray _mask)
 	Mat dst;
 	distanceTransform(mask, dst, CV_DIST_L2, 3); //distance transform
 		
-	int numMarking = 7;	// 
+	int numMarking = 15;	// 
 	int minIdx[2];    	// idx[0] : y, idx[1] : x
 	int palmSizeRange[] = {1500, 2600};		// <------ could be customized (hand size)
 	
@@ -312,7 +310,7 @@ void MyListener::getHandCenter(InputArray _mask)
 			erase = radius*2.0;			
 			vHand.push_back(Hand(handPos, radius, fdistance));	
 		}else{
-			erase = radius/10.0;
+			erase = radius/5.0;
 		}
 		if(minIdx[1]!=-1){
 			circle(dst, Point(minIdx[1], minIdx[0]), cvRound(erase*1.1), Scalar(0), -1);
@@ -321,7 +319,7 @@ void MyListener::getHandCenter(InputArray _mask)
 	
 	//imshow("dst",dst);
 	
-	//sort(vHand.begin(), vHand.end());
+	sort(vHand.begin(), vHand.end());
 } 
 
 
@@ -365,8 +363,8 @@ int MyListener::countingFingers(InputArray _src, OutputArray _dst)
 		}		
 		else if(src.at<uchar>(pre_pt.y, pre_pt.x)==255 && src.at<uchar>(pt.y, pt.x)==0){
 			
-			// finger width (5 ~ 35) <------ could be customized
-			if(fingerWidth > 5 && fingerWidth < 35){	
+			// finger width (3 ~ 35) <------ could be customized
+			if(fingerWidth > 4 && fingerWidth < 35){	
 				Point midPt;
 				if(start_pt == Point(0,0)) 	midPt = pre_pt;
 				else 						midPt = (start_pt + pre_pt)/2;
@@ -397,7 +395,10 @@ int MyListener::countingFingers(InputArray _src, OutputArray _dst)
 	}
 	
 	//imshow("cImg", cImg);	//	
-	return fingerCount - armCt;
+	if(fingerCount - armCt > 5)
+		return 5;
+	else
+		return fingerCount - armCt;
 }	
 	
 void MyListener::midPointCircle(vector<Point>& v_circle, Size size)
@@ -482,9 +483,9 @@ bool MyListener::outOfRange()
 	// this value is changing depending on the distance
 	int dist = vHand.at(0).distance;
 	Point pt = vHand.at(0).pos;
-	int x_tol = (int)((float)zImagef.cols * (float)dist/255.0f );	//tolerance
+	int x_tol = (int)((float)zImagef.cols * (float)dist/255.0f / 2.0f);	//tolerance
 	int y_tol = (int)((float)zImagef.rows * (float)dist/255.0f / 2.0f);
-	
+
 	if( (pt.x>x_tol && pt.x<zImagef.cols-x_tol) && (pt.y>y_tol && pt.y<(zImagef.rows-y_tol)) )
 		return false;	//not out of range
 	else
@@ -502,7 +503,7 @@ void MyListener::handDetected()
 		// it starts counting and being ready to run 
 			if(vHand.empty()) return;
 			
-			int moving_speed = +2;
+			int moving_speed = -4;
 			
 			static int pre_distance = 255;
 			
@@ -569,7 +570,7 @@ void MyListener::runMode()
 	
 	float radius = (float)(255-dist)/15.0f;	//distance
 	
-	int x_tol = (int)((float)zImagef.cols * (float)dist/255.0f );
+	int x_tol = (int)((float)zImagef.cols * (float)dist/255.0f / 2.0f);
 	int y_tol = (int)((float)zImagef.rows * (float)dist/255.0f / 2.0f);
 	
 	//vector push_back
@@ -626,7 +627,7 @@ void MyListener::direction()
 	int dist = sum_dist/vHandPos_z.size();
 	
 	//range threshold
-	int x_tol = (int)((float)zImagef.cols * (float)dist/255.0f );
+	int x_tol = (int)((float)zImagef.cols * (float)dist/255.0f / 2.0f);
 	int y_tol = (int)((float)zImagef.rows * (float)dist/255.0f / 2.0f);
 	int x_dif_range = zImagef.cols/2 - x_tol;
 	int y_dif_range = zImagef.rows/2 - y_tol;
@@ -638,9 +639,9 @@ void MyListener::direction()
 	
 	//direction decision	<--- could be customized
 	bool x_movement_flag = false, y_movement_flag = false;
-	if(abs(difPos.x) > x_dif_range/2)	
+	if(abs(difPos.x) > x_dif_range/3)	
 		x_movement_flag = true;
-	if(abs(difPos.y) > y_dif_range/2)
+	if(abs(difPos.y) > y_dif_range*2/3)
 		y_movement_flag = true;
 	
 	if(x_movement_flag && !y_movement_flag)

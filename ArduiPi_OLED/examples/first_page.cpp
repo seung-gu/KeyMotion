@@ -168,12 +168,11 @@ void runMode(void)
 	//initialize
 	if(pre_runProgram_flag==0 && runProgram_flag==1)	//rising edge	
 	{				
-		handle = popen("/home/pi/ProjectKeyMotion/./program.sh", "r");
-		// /home/pi/Downloads/OpenLicht/libroyale-3.17.0.56-LINUX-arm-32Bit/samples/cpp/KeyMotion_v1a/./KeyMotion_v1a
+		handle = popen("/home/pi/Desktop/ProjectKeyMotion/./program.sh", "r");
 		wait_flag = 1;
 		
 		if (handle == NULL){
-			printf("Can't open /home/pi/ProjectKeyMotion/./program.sh \n");
+			printf("Can't open /home/pi/Desktop/ProjectKeyMotion/./program.sh \n");
 			return;
 		}
 		
@@ -269,7 +268,7 @@ void pinIN_handler(void)
 		display.clearDisplay();
 		display.display();
 		
-		FILE *handle = popen("/home/pi/ProjectKeyMotion/./systemDown.sh", "r");
+		FILE *handle = popen("/home/pi/Desktop/ProjectKeyMotion/./systemDown.sh", "r");
 		if (handle == NULL) return;
 		
 		printf("end\n");

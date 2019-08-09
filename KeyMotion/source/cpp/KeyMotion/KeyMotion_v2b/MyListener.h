@@ -56,7 +56,7 @@ using namespace cv;
 #define MAX_DEPTH 1.0 		// fixed value
 // this can be customized (75cm) (real hand detection range, in myGetHistogram function)
 // and must be smaller than MAX_DEPTH
-#define MAX_DISTANCE 0.75	
+#define MAX_DISTANCE 0.9	
 #define READY 20
 
 enum PINS{PINLEFT=21, PINUP, PINPRESS, PINDOWN, PINRIGHT, KEY3=27, KEY2};
@@ -154,7 +154,7 @@ public:
 		this->palmRadius = palmRadius;
 		this->fdistance = fdistance;
 		
-		this->distance = cvRound(255.0f/2.0f*fdistance);
+		this->distance = cvRound(255.0f*fdistance/(float)MAX_DEPTH);
 		
 		this->palmSize = (double)distance*palmRadius;
 	}
