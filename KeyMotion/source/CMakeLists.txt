@@ -13,5 +13,5 @@ cmake_minimum_required(VERSION 2.8)
 project (royale_samples)
 
 # C++ samples
-add_subdirectory(cpp/KeyMotion/KeyMotion_v2b)
+add_subdirectory(cpp/KeyMotion/KeyMotion_v2c)
 add_subdirectory(cpp/KeyMotion/KeyMotion_v1c)

@@ -29,7 +29,7 @@ CMAKE_COLOR_MAKEFILE:BOOL=ON
 //CXX compiler
 CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/c++
 
-CMAKE_CXX_FLAGS:STRING= -fPIC -std=c++0x -Wall -Wconversion -fPIC -std=c++0x -Wall -Wconversion -fPIC -std=c++0x -Wall -Wconversion -fPIC -std=c++0x -Wall -Wconversion -fPIC -std=c++0x -Wall -Wconversion -fPIC -std=c++0x -Wall -Wconversion -fPIC -std=c++0x -Wall -Wconversion -fPIC -std=c++0x -Wall -Wconversion -fPIC -std=c++0x -Wall -Wconversion -fPIC -std=c++0x -Wall -Wconversion
+CMAKE_CXX_FLAGS:STRING= -fPIC -std=c++0x -Wall -Wconversion -fPIC -std=c++0x -Wall -Wconversion -fPIC -std=c++0x -Wall -Wconversion -fPIC -std=c++0x -Wall -Wconversion -fPIC -std=c++0x -Wall -Wconversion -fPIC -std=c++0x -Wall -Wconversion -fPIC -std=c++0x -Wall -Wconversion -fPIC -std=c++0x -Wall -Wconversion -fPIC -std=c++0x -Wall -Wconversion -fPIC -std=c++0x -Wall -Wconversion -fPIC -std=c++0x -Wall -Wconversion -fPIC -std=c++0x -Wall -Wconversion -fPIC -std=c++0x -Wall -Wconversion -fPIC -std=c++0x -Wall -Wconversion -fPIC -std=c++0x -Wall -Wconversion -fPIC -std=c++0x -Wall -Wconversion
 
 //Flags used by the compiler during debug builds.
 CMAKE_CXX_FLAGS_DEBUG:STRING=-g
@@ -186,6 +186,12 @@ KeyMotion_v2b_BINARY_DIR:STATIC=/home/pi/Desktop/ProjectKeyMotion/KeyMotion/sour
 //Value Computed by CMake
 KeyMotion_v2b_SOURCE_DIR:STATIC=/home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v2b
 
+//Value Computed by CMake
+KeyMotion_v2c_BINARY_DIR:STATIC=/home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v2c
+
+//Value Computed by CMake
+KeyMotion_v2c_SOURCE_DIR:STATIC=/home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v2c
+
 //Dependencies for the target
 LibsKeyMotion_v1c_LIB_DEPENDS:STATIC=general;-lwiringPi;general;-lbcm2835;general;-lX11;general;-lXtst;general;-lbluetooth;general;-L/usr/;
 
@@ -194,6 +200,9 @@ LibsKeyMotion_v2a_LIB_DEPENDS:STATIC=general;-lwiringPi;general;-lbcm2835;genera
 
 //Dependencies for the target
 LibsKeyMotion_v2b_LIB_DEPENDS:STATIC=general;-lwiringPi;general;-lbcm2835;general;-lX11;general;-lXtst;general;-lbluetooth;general;-L/usr/;
+
+//Dependencies for the target
+LibsKeyMotion_v2c_LIB_DEPENDS:STATIC=general;-lwiringPi;general;-lbcm2835;general;-lX11;general;-lXtst;general;-lbluetooth;general;-L/usr/;
 
 //The directory containing a CMake configuration file for OpenCV.
 OpenCV_DIR:PATH=/usr/local/share/OpenCV

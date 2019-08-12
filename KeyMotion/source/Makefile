@@ -111,30 +111,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named LibsKeyMotion_v2b
+# Target rules for targets named LibsKeyMotion_v2c
 
 # Build rule for target.
-LibsKeyMotion_v2b: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 LibsKeyMotion_v2b
-.PHONY : LibsKeyMotion_v2b
+LibsKeyMotion_v2c: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 LibsKeyMotion_v2c
+.PHONY : LibsKeyMotion_v2c
 
 # fast build rule for target.
-LibsKeyMotion_v2b/fast:
-	$(MAKE) -f cpp/KeyMotion/KeyMotion_v2b/CMakeFiles/LibsKeyMotion_v2b.dir/build.make cpp/KeyMotion/KeyMotion_v2b/CMakeFiles/LibsKeyMotion_v2b.dir/build
-.PHONY : LibsKeyMotion_v2b/fast
+LibsKeyMotion_v2c/fast:
+	$(MAKE) -f cpp/KeyMotion/KeyMotion_v2c/CMakeFiles/LibsKeyMotion_v2c.dir/build.make cpp/KeyMotion/KeyMotion_v2c/CMakeFiles/LibsKeyMotion_v2c.dir/build
+.PHONY : LibsKeyMotion_v2c/fast
 
 #=============================================================================
-# Target rules for targets named KeyMotion_v2b
+# Target rules for targets named KeyMotion_v2c
 
 # Build rule for target.
-KeyMotion_v2b: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 KeyMotion_v2b
-.PHONY : KeyMotion_v2b
+KeyMotion_v2c: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 KeyMotion_v2c
+.PHONY : KeyMotion_v2c
 
 # fast build rule for target.
-KeyMotion_v2b/fast:
-	$(MAKE) -f cpp/KeyMotion/KeyMotion_v2b/CMakeFiles/KeyMotion_v2b.dir/build.make cpp/KeyMotion/KeyMotion_v2b/CMakeFiles/KeyMotion_v2b.dir/build
-.PHONY : KeyMotion_v2b/fast
+KeyMotion_v2c/fast:
+	$(MAKE) -f cpp/KeyMotion/KeyMotion_v2c/CMakeFiles/KeyMotion_v2c.dir/build.make cpp/KeyMotion/KeyMotion_v2c/CMakeFiles/KeyMotion_v2c.dir/build
+.PHONY : KeyMotion_v2c/fast
 
 #=============================================================================
 # Target rules for targets named LibsKeyMotion_v1c
@@ -170,8 +170,8 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... LibsKeyMotion_v2b"
-	@echo "... KeyMotion_v2b"
+	@echo "... LibsKeyMotion_v2c"
+	@echo "... KeyMotion_v2c"
 	@echo "... LibsKeyMotion_v1c"
 	@echo "... KeyMotion_v1c"
 .PHONY : help

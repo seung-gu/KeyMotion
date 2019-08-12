@@ -12,3 +12,11 @@ KeyMotion_v2b
 
 -> no pow() or fastPrecisePow() function any more.
    ,but still pow() function used in histogram.
+
+2019/08/07
+
+KeyMotion_v2c 
+
+-> parameters changed zROI_tol, histSize, hand_size_range, std_dev_range,
+		numMarking, fingerWidth, x_tol, MAX_DISTANCE
+-> formular for distance parameter in Hand class (255/2*fdist -> 255*fdist/MAX_DEPTH)

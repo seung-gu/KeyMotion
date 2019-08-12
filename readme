@@ -18,7 +18,7 @@
 #### compile KeyMotion   #### 
 #
 # 8. open folder KeyMotion/source/ and type : sudo cmake .
-# 9. open folder KeyMotion/source/cpp/KeyMotion/KeyMotion_v2b/ and type : sudo make
+# 9. open folder KeyMotion/source/cpp/KeyMotion/KeyMotion_v2c/ and type : sudo make
 #
 #### bash files ####
 #
