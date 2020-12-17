@@ -26,7 +26,7 @@ endif
 prefix := /usr/local
 
 # define all programs
-PROGRAMS = oled_demo
+PROGRAMS = first_page
 SOURCES = ${PROGRAMS:=.cpp}
 
 CXX=g++

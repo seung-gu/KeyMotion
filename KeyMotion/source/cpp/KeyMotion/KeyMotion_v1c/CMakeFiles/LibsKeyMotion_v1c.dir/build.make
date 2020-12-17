@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/ProjectKeyMotion/KeyMotion/source
+CMAKE_SOURCE_DIR = /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/ProjectKeyMotion/KeyMotion/source
+CMAKE_BINARY_DIR = /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source
 
 # Include any dependencies generated for this target.
 include cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/LibsKeyMotion_v1c.dir/depend.make
@@ -59,16 +59,16 @@ include cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/LibsKeyMotion_v1c.dir/flags.make
 
 cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/LibsKeyMotion_v1c.dir/main.cpp.o: cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/LibsKeyMotion_v1c.dir/flags.make
 cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/LibsKeyMotion_v1c.dir/main.cpp.o: cpp/KeyMotion/KeyMotion_v1c/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/ProjectKeyMotion/KeyMotion/source/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/LibsKeyMotion_v1c.dir/main.cpp.o"
-	cd /home/pi/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LibsKeyMotion_v1c.dir/main.cpp.o -c /home/pi/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/LibsKeyMotion_v1c.dir/main.cpp.o"
+	cd /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LibsKeyMotion_v1c.dir/main.cpp.o -c /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c/main.cpp
 
 cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/LibsKeyMotion_v1c.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LibsKeyMotion_v1c.dir/main.cpp.i"
-	cd /home/pi/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c/main.cpp > CMakeFiles/LibsKeyMotion_v1c.dir/main.cpp.i
+	cd /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c/main.cpp > CMakeFiles/LibsKeyMotion_v1c.dir/main.cpp.i
 
 cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/LibsKeyMotion_v1c.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LibsKeyMotion_v1c.dir/main.cpp.s"
-	cd /home/pi/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c/main.cpp -o CMakeFiles/LibsKeyMotion_v1c.dir/main.cpp.s
+	cd /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c/main.cpp -o CMakeFiles/LibsKeyMotion_v1c.dir/main.cpp.s
 
 cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/LibsKeyMotion_v1c.dir/main.cpp.o.requires:
 
@@ -91,9 +91,9 @@ LibsKeyMotion_v1c_EXTERNAL_OBJECTS =
 cpp/KeyMotion/KeyMotion_v1c/libLibsKeyMotion_v1c.a: cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/LibsKeyMotion_v1c.dir/main.cpp.o
 cpp/KeyMotion/KeyMotion_v1c/libLibsKeyMotion_v1c.a: cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/LibsKeyMotion_v1c.dir/build.make
 cpp/KeyMotion/KeyMotion_v1c/libLibsKeyMotion_v1c.a: cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/LibsKeyMotion_v1c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pi/ProjectKeyMotion/KeyMotion/source/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libLibsKeyMotion_v1c.a"
-	cd /home/pi/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c && $(CMAKE_COMMAND) -P CMakeFiles/LibsKeyMotion_v1c.dir/cmake_clean_target.cmake
-	cd /home/pi/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LibsKeyMotion_v1c.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libLibsKeyMotion_v1c.a"
+	cd /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c && $(CMAKE_COMMAND) -P CMakeFiles/LibsKeyMotion_v1c.dir/cmake_clean_target.cmake
+	cd /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LibsKeyMotion_v1c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/LibsKeyMotion_v1c.dir/build: cpp/KeyMotion/KeyMotion_v1c/libLibsKeyMotion_v1c.a
@@ -105,10 +105,10 @@ cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/LibsKeyMotion_v1c.dir/requires: cpp/KeyMo
 .PHONY : cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/LibsKeyMotion_v1c.dir/requires
 
 cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/LibsKeyMotion_v1c.dir/clean:
-	cd /home/pi/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c && $(CMAKE_COMMAND) -P CMakeFiles/LibsKeyMotion_v1c.dir/cmake_clean.cmake
+	cd /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c && $(CMAKE_COMMAND) -P CMakeFiles/LibsKeyMotion_v1c.dir/cmake_clean.cmake
 .PHONY : cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/LibsKeyMotion_v1c.dir/clean
 
 cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/LibsKeyMotion_v1c.dir/depend:
-	cd /home/pi/ProjectKeyMotion/KeyMotion/source && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/ProjectKeyMotion/KeyMotion/source /home/pi/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c /home/pi/ProjectKeyMotion/KeyMotion/source /home/pi/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c /home/pi/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/LibsKeyMotion_v1c.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/LibsKeyMotion_v1c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : cpp/KeyMotion/KeyMotion_v1c/CMakeFiles/LibsKeyMotion_v1c.dir/depend
 

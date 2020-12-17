@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pi/ProjectKeyMotion/KeyMotion/source
+CMAKE_SOURCE_DIR = /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pi/ProjectKeyMotion/KeyMotion/source
+CMAKE_BINARY_DIR = /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ProjectKeyMotion/KeyMotion/source/CMakeFiles /home/pi/ProjectKeyMotion/KeyMotion/source/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/CMakeFiles /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/ProjectKeyMotion/KeyMotion/source/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,30 +111,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named LibsKeyMotion_v2a
+# Target rules for targets named LibsKeyMotion_v2b
 
 # Build rule for target.
-LibsKeyMotion_v2a: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 LibsKeyMotion_v2a
-.PHONY : LibsKeyMotion_v2a
+LibsKeyMotion_v2b: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 LibsKeyMotion_v2b
+.PHONY : LibsKeyMotion_v2b
 
 # fast build rule for target.
-LibsKeyMotion_v2a/fast:
-	$(MAKE) -f cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/LibsKeyMotion_v2a.dir/build.make cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/LibsKeyMotion_v2a.dir/build
-.PHONY : LibsKeyMotion_v2a/fast
+LibsKeyMotion_v2b/fast:
+	$(MAKE) -f cpp/KeyMotion/KeyMotion_v2b/CMakeFiles/LibsKeyMotion_v2b.dir/build.make cpp/KeyMotion/KeyMotion_v2b/CMakeFiles/LibsKeyMotion_v2b.dir/build
+.PHONY : LibsKeyMotion_v2b/fast
 
 #=============================================================================
-# Target rules for targets named KeyMotion_v2a
+# Target rules for targets named KeyMotion_v2b
 
 # Build rule for target.
-KeyMotion_v2a: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 KeyMotion_v2a
-.PHONY : KeyMotion_v2a
+KeyMotion_v2b: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 KeyMotion_v2b
+.PHONY : KeyMotion_v2b
 
 # fast build rule for target.
-KeyMotion_v2a/fast:
-	$(MAKE) -f cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/KeyMotion_v2a.dir/build.make cpp/KeyMotion/KeyMotion_v2a/CMakeFiles/KeyMotion_v2a.dir/build
-.PHONY : KeyMotion_v2a/fast
+KeyMotion_v2b/fast:
+	$(MAKE) -f cpp/KeyMotion/KeyMotion_v2b/CMakeFiles/KeyMotion_v2b.dir/build.make cpp/KeyMotion/KeyMotion_v2b/CMakeFiles/KeyMotion_v2b.dir/build
+.PHONY : KeyMotion_v2b/fast
 
 #=============================================================================
 # Target rules for targets named LibsKeyMotion_v1c
@@ -170,8 +170,8 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... LibsKeyMotion_v2a"
-	@echo "... KeyMotion_v2a"
+	@echo "... LibsKeyMotion_v2b"
+	@echo "... KeyMotion_v2b"
 	@echo "... LibsKeyMotion_v1c"
 	@echo "... KeyMotion_v1c"
 .PHONY : help

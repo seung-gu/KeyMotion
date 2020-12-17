@@ -1,2 +1,33 @@
-ArduiPi_OLED : operation program 
-KeyMotion : main program
+#ArduiPi_OLED : operation program 
+#KeyMotion : main program
+
+### because of symbolic links issue, these steps are needed to run program #############
+#
+# 1. copy and paste onto hardware (not on USB directory)
+# 2. unzip libroyale-3.17.0.56-LINUX-arm-32Bit.zip
+# 3. open folder libroyale-3.17.0.56-LINUX-arm-32Bit/bin/
+# 4. copy libroyale.so, libroyaleCAPI.so files. 
+#    (These files should be link files - arrow mark on file image)
+# 5. paste and overwrite into this folder KeyMotion/bin/
+# 
+#### compile ArduiPi_OLED####
+#
+# 6. open folder ArduiPi_OLED/ and type in terminal : sudo make
+# 7. open folder ArduiPi_OLED/example and type in terminal : sudo make
+#
+#### compile KeyMotion   #### 
+#
+# 8. open folder KeyMotion/source/ and type : sudo cmake .
+# 9. open folder KeyMotion/source/cpp/KeyMotion/KeyMotion_v2b/ and type : sudo make
+#
+#### bash files ####
+#
+# In bash files, directory needs to be modified ( open.sh, program.sh, systemDown.sh )
+# If it is necessary to run the program "first_page" directly when linux turns on,
+# please refer to this : 
+#
+# raspberrypi.stackexchange.com/questions/12730/start-a-lxterminal-on-startup
+# 
+# there needs some setup to run the program automatically.
+#
+#########################################################################################

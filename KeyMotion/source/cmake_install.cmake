@@ -1,4 +1,4 @@
-# Install script for directory: /home/pi/ProjectKeyMotion/KeyMotion/source
+# Install script for directory: /home/pi/Desktop/ProjectKeyMotion/KeyMotion/source
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,8 +34,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/pi/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v2a/cmake_install.cmake")
-  include("/home/pi/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c/cmake_install.cmake")
+  include("/home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v2b/cmake_install.cmake")
+  include("/home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/cpp/KeyMotion/KeyMotion_v1c/cmake_install.cmake")
 
 endif()
 
@@ -47,5 +47,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/pi/ProjectKeyMotion/KeyMotion/source/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/pi/Desktop/ProjectKeyMotion/KeyMotion/source/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
